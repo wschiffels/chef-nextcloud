@@ -1,0 +1,16 @@
+name              'chef-nextcloud'
+maintainer        'wschiffels'
+maintainer_email  'wschiffels'
+license           'Apache 2.0'
+issues_url        'FIXME/chef-nextcloud/issues'
+source_url        'FIXME/chef-nextcloud'
+description       'Installs/configures nextcloud'
+long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version           '0.1.0'
+recipe            'nextcloud::default', 'Installs/configures nextcloud'
+supports          'centos'
+
+depends           'yum-epel'
+depends           'php'
+depends           'apache2'
+depends           'mariadb'
